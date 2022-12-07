@@ -1,0 +1,24 @@
+---
+formatter: markdown table
+
+header-from: main.tf
+
+output:
+  file: ./README.md
+  mode: replace
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+
+    {{ .Content }}
+
+    <!-- END_TF_DOCS -->
+
+sort:
+  enabled: true
+
+settings:
+  indent: 2
+  escape: false
+  default: true
+  required: true
+  type: true

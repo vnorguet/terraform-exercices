@@ -16,6 +16,5 @@ provider "aws" {
       owner     = ""
       workspace = terraform.workspace
     }
-
   }
 }
